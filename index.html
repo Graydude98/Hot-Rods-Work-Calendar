@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Hot Rods Work Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+</head>
+
+<body>
+
+
+    <div class="hero">
+
+    
+        <div id="calendar"></div>
+
+
+
+    </div>    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+        $('#calendar').evoCalendar({
+            
+        })
+    })
+    calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "August/7/2023", // Event date (required)
+        description:"May your journey during your rest day be filled with nothing but joy and awe.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Vacation Leave",
+        badge: "08/23 - 08/25", // Event badge (optional)
+        date: ["August/23/2023", "August/25/2023"], // Date range
+        description: "Vacation leave for 3 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      }
+    ]
+
+</script>
+
+</body>
+
+</html>
